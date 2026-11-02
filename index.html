@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>ShopKart</h1>
+
+        <div class="cart-icon">
+            🛒 <span id="count">0</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Products -->
+        <div class="products">
+
+            <h2>Products</h2>
+
+            <div class="product-list">
+
+                <div class="card">
+                    <div >
+                        <img class="image pink" src="./pexels-craytive-1478442.jpg" alt="">
+                    </div>
+
+                    <p>Running Shoes - ₹1999</p>
+
+                    <button onclick="addToCart(1999)">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <div class="image blue">
+                        <img class="image blue"   src="./Apple-iPhone-18-Pro-2-1.webp" alt="">
+                    </div>
+
+                    <p>IPhone 18 Pro Max - ₹139000</p>
+
+                    <button onclick="addToCart(139000)">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <div class="image green">
+                        <img class="image green" src="./61jLoRP8iwL.jpg" alt="">
+                    </div>
+
+                    <p>Smart Watch - ₹1699</p>
+
+                    <button onclick="addToCart(799)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Cart -->
+        <div class="cart">
+
+            <h2>Your Cart</h2>
+
+            <p id="message">Your cart is empty.</p>
+
+            <div class="summary">
+
+                <p>
+                    Subtotal:
+                    <span id="subtotal">₹0</span>
+                </p>
+
+                <p>
+                    Shipping:
+                    <span>Free</span>
+                </p>
+
+                <p>
+                    Tax (10%):
+                    <span id="tax">₹0</span>
+                </p>
+
+                <hr>
+
+                <p class="total">
+                    Total:
+                    <span id="total">₹0</span>
+                </p>
+
+                <button onclick="clearCart()">
+                    Clear Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
